@@ -3,7 +3,11 @@ const ganache = require('ganache-cli');
 const Web3 = require('web3');     // Uppercase because we require a constructor function. Makes instance of Web3 lib
 // By convaction it's uppercase
 const web3 = new Web3(ganache.provider());
-const  {interface, bytecode} = require('../compile');
+const {interface, bytecode} = require('../compile');
+
+// console.log(interface);
+// console.log(bytecode);
+// return false;
 
 let accounts;
 let inbox;
